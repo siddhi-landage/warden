@@ -1,0 +1,37 @@
+.navbar {
+    display:flex;
+    flex-direction :row;
+    align-items:center;
+    padding:8px 4%;
+    border: 0.2px solid  #a9a9a9;
+    width:100%;
+    /* gap:20%; */
+}
+
+.navbar .logo{
+    height : 20vh;
+    /* border:1px solid red; */
+}
+
+.text {
+    text-align:center;
+    font-size:7vh;
+    font-weight:100;
+    margin-left:auto;
+
+}
+
+.logo:hover, .profile:hover {
+ transform : translateY(-1px) scale(1.08);
+}
+.profile:hover {
+    border: 1px solid black;
+    box-shadow : 2px solid #a9a9a9;
+}
+
+.profile {
+    width:7.4vw;
+    margin-left: auto; 
+    border : 0.4px solid  #a9a9a9;
+    border-radius : 50%;
+}

@@ -1,0 +1,39 @@
+.add {
+    width:75%;
+    margin-left: max(5vw,25px);
+    margin-top:50px;
+    color: #6d6d6d;
+    font-size:16px;
+    /* border: 2px solid ; */
+}
+
+.add-pdf-upload img {
+    width:25vh;
+}
+
+.add-sub input , .add-Date input{
+    padding: 0.6vh;
+}
+
+.add-btn {
+    max-width:120px;
+    border:none;
+    padding:10px;
+    background-color:#0D92F4;
+    opacity:0.7;
+    color:white;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    border-color:#0D92F4
+}
+.flex-col {
+    /* border: 1px solid red; */
+    padding-bottom: 1vh;
+    margin: 1vh;
+}
+
+.flex-col p {
+    margin:1vh;
+}

@@ -1,0 +1,82 @@
+.add {
+    width:70%;
+    margin-left: max(5vw,25px);
+    margin-top:50px;
+    color: #6d6d6d;
+    font-size:16px;
+    /* border: 1px solid black; */
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+    justify-content :center;
+    /* align-items:center; */
+}
+
+.flex-col {
+     /* border:1px solid black; */
+     display:flex;
+    padding:1vw;
+}
+
+.add-img-upload.flex-col {
+    display:flex;
+    justify-content:flex-start;
+    align-items :center;
+    /* border: 2px solid red; */
+}
+
+.add-Room input , .add-your-name input {
+    margin-left : 6vw;
+}
+.add-img-upload img {
+    width:18vw;
+    height:13vh;
+    margin-left:5vw;
+}
+
+.add-pro-name  {
+   width:max(40% , 280px);
+
+}
+.pro-desc {
+    width:80%
+}
+
+.pro-desc  textarea{
+    width:40%;
+    margin-left:0.6vw;
+}
+
+.add-pro-name  input , .pro-desc  textarea{
+    padding: 10px;
+}
+.add-category-price {
+    display:flex;
+    gap:30px;
+ }
+.add-category-price  select {
+    margin-top: 10px;
+}
+
+.add-category-price  select, .add-category-price  input {
+    max-width: 120px;
+    padding:10px;
+}
+
+.add-btn {
+    max-width:120px;
+    border:none;
+    padding:10px;
+    background-color:#0D92F4 ;
+    color:white;
+    cursor: pointer;
+    margin: 3vh;
+    margin-left : -0.2vw;
+    opacity:0.7
+} 
+
+.add-your-pos {
+    margin-left:2.2vw;
+}
