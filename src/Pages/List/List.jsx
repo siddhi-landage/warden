@@ -53,7 +53,7 @@ const List = () => {
       return (
         <div key={index} className='table-title'>
          <p>{item.subject}</p>
-         <img src={`${url}/images/` + item.image} alt=""/>
+         <img src={`${url}/images/` + item.inage} alt={item.subject}/>
          <p>{formatDate(item.Date)}</p>
           <p onClick = { () => removeNotice(item._id)} className="cursor">X</p> 
         </div>

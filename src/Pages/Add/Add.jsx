@@ -64,7 +64,7 @@ const Add = () => {
          
          <div className="add-Date flex-col">
             <p>Date </p>
-            <input onChange = {handlerOnchange} value={data.Room} type="Date" name="Date" placeholder="Type here"/>
+            <input onChange = {handlerOnchange} value={data.Date} type="Date" name="Date" placeholder="Type here"/>
            </div>
            
          <button type="submit" className='add-btn'> ADD </button>
