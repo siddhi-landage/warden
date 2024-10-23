@@ -19,7 +19,6 @@ const List = () => {
     }
   }
 
-
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return new Date(dateString).toLocaleDateString(undefined, options);
@@ -53,7 +52,7 @@ const List = () => {
       return (
         <div key={index} className='table-title'>
          <p>{item.subject}</p>
-         <img src={`${url}/images/` + item.inage} alt={item.subject}/>
+         <img src={`${url}/Uploads/` + item.image} alt={item.subject}/>
          <p>{formatDate(item.Date)}</p>
           <p onClick = { () => removeNotice(item._id)} className="cursor">X</p> 
         </div>

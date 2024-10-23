@@ -39,6 +39,17 @@ const removeNotices = async( complainId ) => {
    }
   }
 
+  const removeNoticew = async( noticeId ) => {
+    const responce = await axios.post(`${url}/api/complaint/remove`, {id : noticeId});
+    fetchcompw();
+   if (responce.data.success) {
+    toast.success("Notice Removed");
+   } else {
+     toast.error("Error");
+   }
+  }
+
+  
   useEffect ( () => {
     fetchcomps()
   } , [])
@@ -46,6 +57,7 @@ const removeNotices = async( complainId ) => {
   useEffect ( () => {
     fetchcompw()
   } , [])
+
 
   return (
     <div className='compl'>
@@ -58,6 +70,7 @@ const removeNotices = async( complainId ) => {
               <b>Room</b>
               <b>category</b>
               <b>image</b>
+              <b>Clear</b>
             </div>    
           {listw.map((item, index) => {
            return (
@@ -67,6 +80,7 @@ const removeNotices = async( complainId ) => {
                 <p>{item.Room}</p>
                 <p>{item.category}</p>
                 <img src={`${url}/images/` + item.image} alt={item.subject}/>
+                <p onClick = { () => removeNotices(item._id)} className="cursor">X</p>
               </div>
              )
          })}
@@ -81,6 +95,7 @@ const removeNotices = async( complainId ) => {
             <b>Room</b>
             <b>category</b>
             <b>image</b>
+            <b>Clear</b>
         </div>    
         {lists.map((item, index) => {
          return (
@@ -89,7 +104,8 @@ const removeNotices = async( complainId ) => {
                 <p>{item.description}</p>
                 <p>{item.Room}</p>
                 <p>{item.category}</p>
-                <img src={`${url}/images/` + item.image} alt={item.subject}/>
+                <img src={`${url}/uploads/` + item.image} alt={item.subject}/>
+                <p onClick = { () => removeNoticew(item._id)} className="cursor">X</p>
             </div>
           )
        })}
