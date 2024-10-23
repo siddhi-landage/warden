@@ -3,7 +3,7 @@ import './Sidebar.css'
 import { NavLink } from 'react-router-dom'
 import add from '../../assets/notice add.jpeg' 
 import show from '../../assets/show notice.jpeg'
-import delete_img from '../../assets/DELETE_IMG.jpeg'
+import list from '../../assets/list.jpeg'
 
 const Sidebar = () => {
   return (
@@ -16,10 +16,10 @@ const Sidebar = () => {
             <img src={show} alt="" />
             <p>List Notices</p>
          </NavLink>
-         {/* <NavLink to ='/Remove' className="option">
-            <img src={delete_img} alt="remove" />
-            <p>Remove Notice</p>
-         </NavLink> */}
+         <NavLink to ='/listcomp' className="option">
+            <img src={list} alt=""/>
+            <p>See Complains</p>
+         </NavLink>
         </div>
   
   )

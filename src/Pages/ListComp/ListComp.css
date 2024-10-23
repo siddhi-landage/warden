@@ -1,0 +1,90 @@
+/* Main table layout */
+.list-table {
+    border: 1px solid black;
+    width: 90%;
+    margin: 2vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.table-title {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    border-bottom: 1px solid #cacaca;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+.box {
+    margin-top: 2vh;
+}
+.box h2 {
+    text-align:center;
+}
+/* Aligning content inside each table row */
+.table-title p, .table-title b {
+    margin: 0;
+    text-align: left;
+}
+
+.table-title b {
+    font-weight:700;
+}
+.table-title img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Hover effect for rows */
+.table-title:hover {
+    background-color: #f1f1f1;
+}
+
+/* Media query for smaller screens (up to 600px) */
+@media (max-width: 600px) {
+    .table-title {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 2vw;
+        font-size: 12px;
+    }
+    .list-table {
+        width: 90vw;
+    }
+    .table-title img {
+        width: 80px;
+    }
+    .table-title b, .table-title p {
+        font-size: 11px;
+    }
+}
+
+/* Media query for very small screens (up to 400px) */
+@media (max-width: 400px) {
+    .table-title {
+        grid-template-columns: 1.5fr 1.5fr 1fr;
+        gap: 1vw;
+    }
+    .list-table {
+        width: 85vw;
+    }
+    .table-title b, .table-title p {
+        font-size: 10px;
+        padding-left: 2vw;
+    }
+    .table-title img {
+        width: 60px;
+    }
+}
+
+/* Adding a cursor pointer to the rows */
+.cursor {
+    cursor: pointer;
+}

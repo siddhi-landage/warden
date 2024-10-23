@@ -61,7 +61,6 @@ const List = () => {
     })}
    </div>
   </div>
- 
   )
 }
 
