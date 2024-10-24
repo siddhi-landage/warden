@@ -33,7 +33,7 @@ const removeNotices = async( complainId ) => {
     const responce = await axios.post(`${url}/api/complaint/remove`, {id : complainId});
     fetchcomps();
    if (responce.data.success) {
-    toast.success("Notice Removed");
+    toast.success("Complian Removed");
    } else {
      toast.error("Error");
    }
@@ -43,7 +43,7 @@ const removeNotices = async( complainId ) => {
     const responce = await axios.post(`${url}/api/complaint/remove`, {id : noticeId});
     fetchcompw();
    if (responce.data.success) {
-    toast.success("Notice Removed");
+    toast.success("Complain Removed");
    } else {
      toast.error("Error");
    }
@@ -104,7 +104,7 @@ const removeNotices = async( complainId ) => {
                 <p>{item.description}</p>
                 <p>{item.Room}</p>
                 <p>{item.category}</p>
-                <img src={`${url}/uploads/` + item.image} alt={item.subject}/>
+                <img src={`${url}/images/` + item.image} alt={item.subject}/>
                 <p onClick = { () => removeNoticew(item._id)} className="cursor">X</p>
             </div>
           )
